@@ -8,7 +8,9 @@ let pc = Math.floor( ( Math.random() * 6 ) + 1 );
 alert("il dado del computer segna il numero:");
 alert(pc);
 if(pc>utente){
-    alert("Mi dispiace hai perso")
+    alert("Mi dispiace, hai perso!")
 } else if (utente>pc){
-    
+    alert("Complimenti, hai vinto!")
+} else{
+alert("avete pareggiato")
 }
