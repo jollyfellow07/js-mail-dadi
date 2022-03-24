@@ -20,10 +20,12 @@ if (trasporto != email){
     alert("la tua email non è presente nel database");
     risposta = prompt("vuoi aggiungere la tua email?")
 }
-
-    if(risposta == "si") {
-        let mailDaAggiungere= prompt('inserisci la nuova email');
+//condizione per aggiungere una nuova email
+    if((risposta == "si") || (risposta == "SI")) {
+        let mailDaAggiungere= prompt('inserisci nuovamente la tua email');
         contatti.push(mailDaAggiungere);
         alert("hai aggiunto la tua email correttamente");
         console.log(contatti);
-    } 
+    } else {
+        alert('mi dispiace non puoi accedere');
+    }
